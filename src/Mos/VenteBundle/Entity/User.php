@@ -1,7 +1,27 @@
 <?php
+// src/AppBundle/Entity/User.php
+
+namespace Mos\VenteBundle\Entity;
+
+use FOS\UserBundle\Model\User as BaseUser;
+use Doctrine\ORM\Mapping as ORM;
+
 /**
- * Created by PhpStorm.
- * User: habib1
- * Date: 14/03/17
- * Time: 12:27
+ * @ORM\Entity
+ * @ORM\Table(name="fos_user")
  */
+class User extends BaseUser
+{
+    /**
+     * @ORM\Id
+     * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    protected $id;
+
+    public function __construct()
+    {
+        parent::__construct();
+        // your own logic
+    }
+}

@@ -1,7 +1,16 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: habib1
- * Date: 12/01/17
- * Time: 15:57
- */
+namespace Mos\VenteBundle\Entity;
+class Tag
+{
+    private $name;
+
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    public function setName($name)
+    {
+        $this->name = $name;
+    }
+}

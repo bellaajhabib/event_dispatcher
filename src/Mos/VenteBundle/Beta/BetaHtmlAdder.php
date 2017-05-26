@@ -11,7 +11,7 @@ namespace Mos\VenteBundle\Beta;
 
 use Symfony\Component\HttpFoundation\Response;
 
-class Beta
+class BetaHtmlAdder
 {
     //Méthode pour ajouter le bêta à une réponse
     public function addBeta(Response $response, $remainingDays)
